@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <title>Happy Birthday ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Happy Birthday Sayang Giovany Alya Putri ❤️</h1>
+
+  <!-- 3 FOTO -->
+  <div class="photo-container">
+    <img src="assets/images/foto1.jpg" class="photo">
+    <img src="assets/images/foto2.jpg" class="photo">
+    <img src="assets/images/foto3.jpg" class="photo">
+  </div>
+
+  <p id="typing"></p>
+
+  <button onclick="nextPage()">Lanjut 💌</button>
+</div>
+
+<!-- MUSIK (DITAMBAH MUTED AGAR BISA AUTO PLAY) -->
+<audio id="music" autoplay loop muted>
+  <source src="assets/music/lagu.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+
+<!-- TAMBAHAN UNTUK NYALAIN SUARA SETELAH USER KLIK -->
+<script>
+document.addEventListener("click", function () {
+  const music = document.getElementById("music");
+  music.muted = false;
+  music.play();
+});
+</script>
+
+</body>
+</html>
